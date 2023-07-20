@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="miniRV_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="miniRV_sim" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="5740000000fs"></ZoomStartTime>
+      <ZoomEndTime time="6378500001fs"></ZoomEndTime>
+      <Cursor1Time time="5990000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="142"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="35" />
+   <wvobject fp_name="/miniRV_sim/fpga_rst" type="logic">
+      <obj_property name="ElementShortName">fpga_rst</obj_property>
+      <obj_property name="ObjectShortName">fpga_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/fpga_clk" type="logic">
+      <obj_property name="ElementShortName">fpga_clk</obj_property>
+      <obj_property name="ObjectShortName">fpga_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/switch" type="array">
+      <obj_property name="ElementShortName">switch[23:0]</obj_property>
+      <obj_property name="ObjectShortName">switch[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/button" type="array">
+      <obj_property name="ElementShortName">button[4:0]</obj_property>
+      <obj_property name="ObjectShortName">button[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/dig_en" type="array">
+      <obj_property name="ElementShortName">dig_en[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dig_en[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DN_A" type="logic">
+      <obj_property name="ElementShortName">DN_A</obj_property>
+      <obj_property name="ObjectShortName">DN_A</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DN_B" type="logic">
+      <obj_property name="ElementShortName">DN_B</obj_property>
+      <obj_property name="ObjectShortName">DN_B</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DN_C" type="logic">
+      <obj_property name="ElementShortName">DN_C</obj_property>
+      <obj_property name="ObjectShortName">DN_C</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DN_D" type="logic">
+      <obj_property name="ElementShortName">DN_D</obj_property>
+      <obj_property name="ObjectShortName">DN_D</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DN_E" type="logic">
+      <obj_property name="ElementShortName">DN_E</obj_property>
+      <obj_property name="ObjectShortName">DN_E</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DN_F" type="logic">
+      <obj_property name="ElementShortName">DN_F</obj_property>
+      <obj_property name="ObjectShortName">DN_F</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DN_G" type="logic">
+      <obj_property name="ElementShortName">DN_G</obj_property>
+      <obj_property name="ObjectShortName">DN_G</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DN_DP" type="logic">
+      <obj_property name="ElementShortName">DN_DP</obj_property>
+      <obj_property name="ObjectShortName">DN_DP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/led" type="array">
+      <obj_property name="ElementShortName">led[23:0]</obj_property>
+      <obj_property name="ObjectShortName">led[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/Digital_LED/wdata" type="array">
+      <obj_property name="ElementShortName">wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/Bridge/wdata_from_cpu" type="array">
+      <obj_property name="ElementShortName">wdata_from_cpu[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata_from_cpu[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/Bus_wdata" type="array">
+      <obj_property name="ElementShortName">Bus_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Bus_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/Core_cpu/RF/rD1" type="array">
+      <obj_property name="ElementShortName">rD1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rD1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/Core_cpu/RF/rD2" type="array">
+      <obj_property name="ElementShortName">rD2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rD2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/Core_cpu/RF/rR1" type="array">
+      <obj_property name="ElementShortName">rR1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rR1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/Core_cpu/RF/rR2" type="array">
+      <obj_property name="ElementShortName">rR2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rR2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/Core_cpu/RF_rR2" type="array">
+      <obj_property name="ElementShortName">RF_rR2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">RF_rR2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/Core_cpu/RF_rD2" type="array">
+      <obj_property name="ElementShortName">RF_rD2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RF_rD2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/Core_cpu/RF/wD" type="array">
+      <obj_property name="ElementShortName">wD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/Core_cpu/PC/pc" type="array">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/Mem_IROM/spo" type="array">
+      <obj_property name="ElementShortName">spo[31:0]</obj_property>
+      <obj_property name="ObjectShortName">spo[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/Core_cpu/inst" type="array">
+      <obj_property name="ElementShortName">inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/Digital_LED/data" type="array">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/switch" type="array">
+      <obj_property name="ElementShortName">switch[23:0]</obj_property>
+      <obj_property name="ObjectShortName">switch[23:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/button" type="array">
+      <obj_property name="ElementShortName">button[4:0]</obj_property>
+      <obj_property name="ObjectShortName">button[4:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/Core_cpu/SEXT/ext" type="array">
+      <obj_property name="ElementShortName">ext[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ext[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/Core_cpu/ALU/A" type="array">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/Core_cpu/ALU/B" type="array">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/Core_cpu/ALU/C" type="array">
+      <obj_property name="ElementShortName">C[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/miniRV_sim/DUT/Bus_wdata" type="array">
+      <obj_property name="ElementShortName">Bus_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Bus_wdata[31:0]</obj_property>
+   </wvobject>
+</wave_config>

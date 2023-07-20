@@ -1,0 +1,998 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Jul 10 17:57:02 2023
+| Host         : PA25 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file miniRV_SoC_methodology_drc_routed.rpt -pb miniRV_SoC_methodology_drc_routed.pb -rpx miniRV_SoC_methodology_drc_routed.rpx
+| Design       : miniRV_SoC
+| Device       : xc7a100tfgg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 191
++-----------+----------+--------------------------------------------------------+------------+
+| Rule      | Severity | Description                                            | Violations |
++-----------+----------+--------------------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                           | 8          |
+| TIMING-14 | Warning  | LUT on the clock tree                                  | 1          |
+| TIMING-20 | Warning  | Non-clocked latch                                      | 180        |
+| XDCC-1    | Warning  | Scoped Clock constraint overwritten with the same name | 1          |
+| XDCC-7    | Warning  | Scoped Clock constraint overwritten on the same source | 1          |
++-----------+----------+--------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell Digital_LED/DN_data_reg[0]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Digital_LED/DN_data_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell Digital_LED/DN_data_reg[0]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Digital_LED/DN_data_reg[0]_C/CLR, Digital_LED/DN_data_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell Digital_LED/DN_data_reg[1]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Digital_LED/DN_data_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell Digital_LED/DN_data_reg[1]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Digital_LED/DN_data_reg[1]_C/CLR, Digital_LED/DN_data_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell Digital_LED/DN_data_reg[2]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Digital_LED/DN_data_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell Digital_LED/DN_data_reg[2]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Digital_LED/DN_data_reg[2]_C/CLR, Digital_LED/DN_data_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell Digital_LED/DN_data_reg[3]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Digital_LED/DN_data_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell Digital_LED/DN_data_reg[3]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Digital_LED/DN_data_reg[3]_C/CLR, Digital_LED/DN_data_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-14#1 Warning
+LUT on the clock tree  
+The LUT cpu_clk_BUFG_inst_i_1 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[0] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[10] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[11] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[12] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[13] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[14] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[15] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[16] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[17] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[18] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[19] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[1] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[20] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[21] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[22] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[23] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[24] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[25] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[26] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[27] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[28] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[29] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[2] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[30] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[31] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[3] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[4] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[5] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[6] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[7] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[8] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch Core_cpu/ALU/C_reg[9] cannot be properly analyzed as its control pin Core_cpu/ALU/C_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[0] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[10] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[11] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[12] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[13] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[14] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[15] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[16] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[17] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[18] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[19] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[1] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[20] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[21] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[22] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[23] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[24] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[25] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[26] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[27] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[28] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[29] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[2] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[30] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[31] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[3] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[4] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[5] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[6] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[7] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[8] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#64 Warning
+Non-clocked latch  
+The latch Core_cpu/ALUB_SEL/alub_reg[9] cannot be properly analyzed as its control pin Core_cpu/ALUB_SEL/alub_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#65 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/alu_op_reg[0] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/alu_op_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#66 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/alu_op_reg[1] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/alu_op_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#67 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/alu_op_reg[2] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/alu_op_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#68 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/alu_op_reg[3] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/alu_op_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#69 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/alub_sel_reg[0] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/alub_sel_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#70 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/alub_sel_reg[1] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/alub_sel_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#71 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/npc_op_reg[0] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/npc_op_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#72 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/npc_op_reg[1] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/npc_op_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#73 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/ram_we_reg cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/ram_we_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#74 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/rf_we_reg cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/rf_we_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#75 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/rf_wsel_reg[0] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/rf_wsel_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#76 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/rf_wsel_reg[1] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/rf_wsel_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#77 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/rf_wsel_reg[2] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/rf_wsel_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#78 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/sext_op_reg[0] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/sext_op_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#79 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/sext_op_reg[1] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/sext_op_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#80 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/sext_op_reg[2] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/sext_op_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#81 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[0] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#82 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[10] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#83 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[11] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#84 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[12] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#85 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[13] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#86 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[14] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#87 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[15] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#88 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[16] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#89 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[17] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#90 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[18] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#91 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[19] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#92 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[1] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#93 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[20] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#94 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[21] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#95 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[22] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#96 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[23] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#97 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[24] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#98 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[25] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#99 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[26] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#100 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[27] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#101 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[28] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#102 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[29] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#103 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[2] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#104 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[30] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#105 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[31] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#106 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[3] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#107 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[4] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#108 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[5] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#109 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[6] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#110 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[7] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#111 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[8] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#112 Warning
+Non-clocked latch  
+The latch Core_cpu/NPC/npc_reg[9] cannot be properly analyzed as its control pin Core_cpu/NPC/npc_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#113 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[0] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#114 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[10] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#115 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[11] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#116 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[12] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#117 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[13] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#118 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[14] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#119 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[15] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#120 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[16] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#121 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[17] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#122 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[18] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#123 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[19] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#124 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[1] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#125 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[20] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#126 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[21] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#127 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[22] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#128 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[23] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#129 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[24] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#130 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[25] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#131 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[26] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#132 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[27] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#133 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[28] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#134 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[29] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#135 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[2] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#136 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[30] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#137 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[31] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#138 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[3] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#139 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[4] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#140 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[5] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#141 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[6] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#142 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[7] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#143 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[8] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#144 Warning
+Non-clocked latch  
+The latch Core_cpu/RF_WSEL/wD_reg[9] cannot be properly analyzed as its control pin Core_cpu/RF_WSEL/wD_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#145 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[0] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#146 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[10] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#147 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[11] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#148 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[12] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#149 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[13] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#150 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[14] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#151 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[15] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#152 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[16] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#153 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[17] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#154 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[18] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#155 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[19] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#156 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[1] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#157 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[20] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#158 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[21] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#159 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[22] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#160 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[23] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#161 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[24] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#162 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[25] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#163 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[26] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#164 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[27] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#165 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[28] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#166 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[29] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#167 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[2] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#168 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[30] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#169 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[31] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#170 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[3] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#171 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[4] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#172 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[5] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#173 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[6] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#174 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[7] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#175 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[8] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#176 Warning
+Non-clocked latch  
+The latch Core_cpu/SEXT/ext_reg[9] cannot be properly analyzed as its control pin Core_cpu/SEXT/ext_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#177 Warning
+Non-clocked latch  
+The latch Digital_LED/DN_data_reg[0]_LDC cannot be properly analyzed as its control pin Digital_LED/DN_data_reg[0]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#178 Warning
+Non-clocked latch  
+The latch Digital_LED/DN_data_reg[1]_LDC cannot be properly analyzed as its control pin Digital_LED/DN_data_reg[1]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#179 Warning
+Non-clocked latch  
+The latch Digital_LED/DN_data_reg[2]_LDC cannot be properly analyzed as its control pin Digital_LED/DN_data_reg[2]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#180 Warning
+Non-clocked latch  
+The latch Digital_LED/DN_data_reg[3]_LDC cannot be properly analyzed as its control pin Digital_LED/DN_data_reg[3]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name fpga_clk [get_ports fpga_clk] (Source: D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_clock.xdc (Line: 2))
+Previous: create_clock -period 10.000 [get_ports fpga_clk] (Source: d:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.xdc (Line: 56))
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name fpga_clk [get_ports fpga_clk] (Source: D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_clock.xdc (Line: 2))
+Previous: create_clock -period 10.000 [get_ports fpga_clk] (Source: d:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.xdc (Line: 56))
+Related violations: <none>
+
+

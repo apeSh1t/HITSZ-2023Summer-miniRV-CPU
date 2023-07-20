@@ -1,0 +1,128 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jul 10 14:08:00 2023
+# Process ID: 9692
+# Current directory: D:/ysy/comp2012/proj_miniRV/proj_single_cycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3876 D:\ysy\comp2012\proj_miniRV\proj_single_cycle\proj_single_cycle.xpr
+# Log file: D:/ysy/comp2012/proj_miniRV/proj_single_cycle/vivado.log
+# Journal file: D:/ysy/comp2012/proj_miniRV/proj_single_cycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/defines.vh
+add_files -norecurse {D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/PC.v D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/RF_WSEL.v D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/SWITCH.v D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/NPC.v D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/SEXT.v D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/ALU.v D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/BUTTON.v D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/LED.v D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DIGITAL_LED.v D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/RF.V D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/ALUB_SEL.v D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/CONTROLLER.v D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/Bridge.v D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/miniRV_SoC.v D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/myCPU.v}
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.coefficient_file {D:/ysy/comp2012/proj_miniRV/inst_rom.coe}] [get_ips DRAM]
+set_property -dict [list CONFIG.coefficient_file {D:/ysy/comp2012/proj_miniRV/inst_rom.coe}] [get_ips IROM]
+generate_target all [get_files  D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci]
+catch { config_ip_cache -export [get_ips -all IROM] }
+export_ip_user_files -of_objects [get_files D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci] -no_script -sync -force -quiet
+reset_run IROM_synth_1
+launch_runs -jobs 8 IROM_synth_1
+export_simulation -of_objects [get_files D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci] -directory D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files/sim_scripts -ip_user_files_dir D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files -ipstatic_source_dir D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/modelsim} {questa=D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/questa} {riviera=D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/riviera} {activehdl=D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.coefficient_file {D:/ysy/comp2012/proj_miniRV/data_ram.coe}] [get_ips DRAM]
+generate_target all [get_files  D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/DRAM/DRAM.xci]
+catch { config_ip_cache -export [get_ips -all DRAM] }
+export_ip_user_files -of_objects [get_files D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/DRAM/DRAM.xci] -no_script -sync -force -quiet
+reset_run DRAM_synth_1
+launch_runs -jobs 8 DRAM_synth_1
+export_simulation -of_objects [get_files D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/DRAM/DRAM.xci] -directory D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files/sim_scripts -ip_user_files_dir D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files -ipstatic_source_dir D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/modelsim} {questa=D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/questa} {riviera=D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/riviera} {activehdl=D:/ysy/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+launch_simulation
+source cpuclk_sim.tcl
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw
+close_hw
+launch_simulation
+source cpuclk_sim.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top miniRV_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source miniRV_sim.tcl
+close_sim
+launch_simulation
+source miniRV_sim.tcl
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/miniRV_sim/DUT/Bus_rdata}} 
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/miniRV_sim/DUT/Core_cpu/PC/pc}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/miniRV_sim/DUT/Core_cpu/inst}} 
+save_wave_config {D:/ysy/comp2012/proj_miniRV/proj_single_cycle/miniRV_sim_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/ysy/comp2012/proj_miniRV/proj_single_cycle/miniRV_sim_behav.wcfg
+set_property xsim.view D:/ysy/comp2012/proj_miniRV/proj_single_cycle/miniRV_sim_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config D:/ysy/comp2012/proj_miniRV/proj_single_cycle/miniRV_sim_behav.wcfg
+source miniRV_sim.tcl
+current_wave_config {miniRV_sim_behav.wcfg}
+add_wave {{/miniRV_sim/DUT/Core_cpu/RF/rD1}} 
+current_wave_config {miniRV_sim_behav.wcfg}
+log_wave {/miniRV_sim/DUT/Core_cpu/RF/rD1} 
+remove_forces { {/miniRV_sim/DUT/Core_cpu/RF/rD1} }
+current_wave_config {miniRV_sim_behav.wcfg}
+add_wave {{/miniRV_sim/DUT/Core_cpu/RF/rD1}} 
+current_wave_config {miniRV_sim_behav.wcfg}
+add_wave {{/miniRV_sim/DUT/Core_cpu/SEXT/ext}} 
+current_wave_config {miniRV_sim_behav.wcfg}
+add_wave {{/miniRV_sim/DUT/Core_cpu/RF/wD}} 
+current_wave_config {miniRV_sim_behav.wcfg}
+add_wave {{/miniRV_sim/DUT/Core_cpu/ALU/B}} 
+set_property -name {xsim.simulate.runtime} -value {100000ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config D:/ysy/comp2012/proj_miniRV/proj_single_cycle/miniRV_sim_behav.wcfg
+source miniRV_sim.tcl
+current_wave_config {miniRV_sim_behav.wcfg}
+add_wave {{/miniRV_sim/DUT/Digital_LED/data}} 
+set_property -name {xsim.simulate.log_all_signals} -value {true} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config D:/ysy/comp2012/proj_miniRV/proj_single_cycle/miniRV_sim_behav.wcfg
+source miniRV_sim.tcl
+current_wave_config {miniRV_sim_behav.wcfg}
+add_wave {{/miniRV_sim/DUT/Digital_LED/data}} 
+current_wave_config {miniRV_sim_behav.wcfg}
+add_wave {{/miniRV_sim/DUT/Digital_LED/wdata}} 
+current_wave_config {miniRV_sim_behav.wcfg}
+add_wave {{/miniRV_sim/DUT/Digital_LED/wen}} 
+current_wave_config {miniRV_sim_behav.wcfg}
+add_wave {{/miniRV_sim/DUT/Core_cpu/cpu_rst}} 
+current_wave_config {miniRV_sim_behav.wcfg}
+add_wave {{/miniRV_sim/DUT/switch}} 
+current_wave_config {miniRV_sim_behav.wcfg}
+add_wave {{/miniRV_sim/DUT/button}} 
+current_wave_config {miniRV_sim_behav.wcfg}
+add_wave {{/miniRV_sim/DUT/Core_cpu/SEXT/ext}} 
+current_wave_config {miniRV_sim_behav.wcfg}
+add_wave {{/miniRV_sim/DUT/Core_cpu/ALU/A}} 
+current_wave_config {miniRV_sim_behav.wcfg}
+add_wave {{/miniRV_sim/DUT/Core_cpu/ALU/B}} 
+current_wave_config {miniRV_sim_behav.wcfg}
+add_wave {{/miniRV_sim/DUT/Core_cpu/ALU/C}} 
+save_wave_config {D:/ysy/comp2012/proj_miniRV/proj_single_cycle/miniRV_sim_behav.wcfg}
+close_sim

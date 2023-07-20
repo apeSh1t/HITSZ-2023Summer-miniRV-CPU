@@ -1,0 +1,1573 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jul 18 16:54:58 2023
+| Host         : PA02 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file miniRV_SoC_methodology_drc_routed.rpt -pb miniRV_SoC_methodology_drc_routed.pb -rpx miniRV_SoC_methodology_drc_routed.rpx
+| Design       : miniRV_SoC
+| Device       : xc7a100tfgg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 306
++-----------+----------+--------------------------------------------------------+------------+
+| Rule      | Severity | Description                                            | Violations |
++-----------+----------+--------------------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                           | 196        |
+| TIMING-14 | Warning  | LUT on the clock tree                                  | 1          |
+| TIMING-20 | Warning  | Non-clocked latch                                      | 107        |
+| XDCC-1    | Warning  | Scoped Clock constraint overwritten with the same name | 1          |
+| XDCC-7    | Warning  | Scoped Clock constraint overwritten on the same source | 1          |
++-----------+----------+--------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[0]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[0]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[10]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[10]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[10]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[10]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[11]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[11]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[11]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[11]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[12]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[12]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[12]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[12]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[13]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[13]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[13]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[13]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[14]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[14]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[14]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[14]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#13 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[15]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[15]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#14 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[15]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[15]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#15 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[16]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[16]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#16 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[16]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[16]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#17 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[17]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[17]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#18 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[17]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[17]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#19 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[18]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[18]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#20 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[18]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[18]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#21 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[19]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[19]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#22 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[19]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[19]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#23 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[1]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#24 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[1]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#25 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[20]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[20]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#26 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[20]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[20]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#27 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[21]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[21]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#28 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[21]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[21]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#29 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[22]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[22]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#30 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[22]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[22]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#31 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[23]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[23]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#32 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[23]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[23]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#33 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[24]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[24]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#34 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[24]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[24]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#35 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[25]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[25]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#36 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[25]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[25]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#37 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[26]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[26]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#38 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[26]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[26]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#39 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[27]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[27]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#40 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[27]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[27]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#41 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[28]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[28]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#42 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[28]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[28]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#43 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[29]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[29]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#44 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[29]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[29]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#45 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[2]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#46 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[2]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#47 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[30]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[30]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#48 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[30]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[30]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#49 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[31]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[31]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#50 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[31]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[31]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#51 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[3]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#52 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[3]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#53 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[4]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[4]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#54 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[4]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[4]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#55 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[5]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[5]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#56 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[5]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[5]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#57 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[6]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[6]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#58 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[6]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[6]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#59 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[7]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[7]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#60 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[7]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[7]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#61 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[8]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[8]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#62 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[8]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[8]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#63 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[9]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[9]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#64 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_inst_reg[9]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_inst_reg[9]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#65 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[0]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#66 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[0]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[0]_LDC/CLR, Core_cpu/IF_ID/id_pc_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#67 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[10]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[10]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#68 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[10]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[10]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#69 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[11]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[11]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#70 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[11]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[11]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#71 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[12]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[12]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#72 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[12]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[12]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#73 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[13]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[13]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#74 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[13]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[13]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#75 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[14]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[14]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#76 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[14]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[14]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#77 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[15]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[15]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#78 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[15]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[15]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#79 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[16]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[16]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#80 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[16]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[16]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#81 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[17]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[17]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#82 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[17]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[17]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#83 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[18]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[18]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#84 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[18]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[18]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#85 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[19]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[19]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#86 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[19]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[19]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#87 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[1]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#88 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[1]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[1]_LDC/CLR, Core_cpu/IF_ID/id_pc_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#89 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[20]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[20]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#90 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[20]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[20]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#91 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[21]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[21]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#92 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[21]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[21]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#93 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[22]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[22]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#94 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[22]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[22]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#95 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[23]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[23]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#96 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[23]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[23]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#97 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[24]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[24]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#98 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[24]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[24]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#99 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[25]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[25]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#100 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[25]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[25]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#101 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[26]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[26]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#102 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[26]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[26]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#103 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[27]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[27]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#104 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[27]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[27]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#105 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[28]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[28]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#106 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[28]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[28]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#107 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[29]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[29]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#108 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[29]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[29]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#109 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[2]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#110 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[2]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#111 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[30]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[30]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#112 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[30]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[30]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#113 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[31]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[31]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#114 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[31]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[31]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#115 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[3]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#116 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[3]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#117 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[4]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[4]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#118 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[4]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[4]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#119 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[5]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[5]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#120 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[5]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[5]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#121 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[6]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[6]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#122 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[6]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[6]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#123 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[7]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[7]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#124 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[7]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[7]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#125 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[8]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[8]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#126 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[8]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[8]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#127 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[9]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[9]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#128 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc4_reg[9]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc4_reg[9]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#129 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[10]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[10]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#130 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[10]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[10]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#131 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[11]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[11]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#132 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[11]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[11]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#133 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[12]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[12]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#134 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[12]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[12]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#135 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[13]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[13]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#136 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[13]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[13]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#137 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[14]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[14]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#138 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[14]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[14]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#139 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[15]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[15]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#140 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[15]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[15]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#141 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[16]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[16]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#142 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[16]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[16]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#143 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[17]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[17]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#144 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[17]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[17]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#145 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[18]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[18]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#146 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[18]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[18]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#147 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[19]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[19]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#148 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[19]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[19]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#149 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[20]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[20]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#150 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[20]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[20]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#151 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[21]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[21]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#152 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[21]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[21]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#153 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[22]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[22]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#154 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[22]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[22]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#155 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[23]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[23]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#156 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[23]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[23]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#157 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[24]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[24]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#158 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[24]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[24]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#159 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[25]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[25]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#160 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[25]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[25]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#161 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[26]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[26]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#162 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[26]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[26]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#163 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[27]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[27]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#164 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[27]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[27]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#165 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[28]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[28]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#166 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[28]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[28]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#167 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[29]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[29]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#168 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[29]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[29]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#169 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[2]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#170 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[2]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#171 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[30]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[30]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#172 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[30]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[30]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#173 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[31]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[31]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#174 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[31]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[31]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#175 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[3]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#176 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[3]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#177 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[4]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[4]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#178 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[4]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[4]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#179 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[5]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[5]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#180 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[5]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[5]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#181 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[6]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[6]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#182 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[6]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[6]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#183 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[7]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[7]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#184 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[7]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[7]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#185 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[8]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[8]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#186 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[8]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[8]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#187 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[9]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[9]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#188 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/IF_ID/id_pc_reg[9]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/IF_ID/id_pc_reg[9]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#189 Warning
+LUT drives async reset alert  
+LUT cell Digital_LED/DN_data_reg[0]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Digital_LED/DN_data_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#190 Warning
+LUT drives async reset alert  
+LUT cell Digital_LED/DN_data_reg[0]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Digital_LED/DN_data_reg[0]_C/CLR, Digital_LED/DN_data_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#191 Warning
+LUT drives async reset alert  
+LUT cell Digital_LED/DN_data_reg[1]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Digital_LED/DN_data_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#192 Warning
+LUT drives async reset alert  
+LUT cell Digital_LED/DN_data_reg[1]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Digital_LED/DN_data_reg[1]_C/CLR, Digital_LED/DN_data_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#193 Warning
+LUT drives async reset alert  
+LUT cell Digital_LED/DN_data_reg[2]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Digital_LED/DN_data_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#194 Warning
+LUT drives async reset alert  
+LUT cell Digital_LED/DN_data_reg[2]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Digital_LED/DN_data_reg[2]_C/CLR, Digital_LED/DN_data_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#195 Warning
+LUT drives async reset alert  
+LUT cell Digital_LED/DN_data_reg[3]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Digital_LED/DN_data_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#196 Warning
+LUT drives async reset alert  
+LUT cell Digital_LED/DN_data_reg[3]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Digital_LED/DN_data_reg[3]_C/CLR, Digital_LED/DN_data_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-14#1 Warning
+LUT on the clock tree  
+The LUT cpu_clk_BUFG_inst_i_1 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/alu_op_reg[0] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/alu_op_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/alu_op_reg[1] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/alu_op_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/alu_op_reg[2] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/alu_op_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/alu_op_reg[3] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/alu_op_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/rf_wsel_reg[0] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/rf_wsel_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/rf_wsel_reg[1] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/rf_wsel_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch Core_cpu/CONTROLLER/rf_wsel_reg[2] cannot be properly analyzed as its control pin Core_cpu/CONTROLLER/rf_wsel_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[0]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[0]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[10]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[10]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[11]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[11]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[12]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[12]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[13]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[13]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[14]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[14]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[15]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[15]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[16]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[16]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[17]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[17]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[18]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[18]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[19]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[19]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[1]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[1]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[20]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[20]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[21]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[21]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[22]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[22]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[23]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[23]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[24]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[24]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[25]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[25]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[26]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[26]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[27]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[27]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[28]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[28]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[29]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[29]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[2]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[2]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[30]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[30]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[31]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[31]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[3]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[3]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[4]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[4]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[5]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[5]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[6]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[6]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[7]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[7]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[8]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[8]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_inst_reg[9]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_inst_reg[9]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[0]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[0]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[10]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[10]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[11]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[11]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[12]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[12]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[13]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[13]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[14]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[14]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[15]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[15]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[16]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[16]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[17]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[17]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[18]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[18]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[19]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[19]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[1]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[1]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[20]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[20]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[21]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[21]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[22]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[22]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[23]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[23]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[24]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[24]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[25]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[25]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[26]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[26]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[27]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[27]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[28]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[28]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[29]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[29]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[2]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[2]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[30]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[30]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#64 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[31]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[31]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#65 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[3]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[3]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#66 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[4]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[4]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#67 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[5]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[5]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#68 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[6]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[6]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#69 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[7]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[7]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#70 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[8]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[8]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#71 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc4_reg[9]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc4_reg[9]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#72 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[0]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[0]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#73 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[10]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[10]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#74 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[11]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[11]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#75 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[12]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[12]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#76 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[13]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[13]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#77 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[14]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[14]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#78 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[15]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[15]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#79 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[16]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[16]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#80 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[17]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[17]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#81 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[18]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[18]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#82 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[19]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[19]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#83 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[1]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[1]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#84 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[20]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[20]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#85 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[21]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[21]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#86 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[22]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[22]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#87 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[23]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[23]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#88 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[24]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[24]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#89 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[25]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[25]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#90 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[26]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[26]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#91 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[27]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[27]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#92 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[28]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[28]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#93 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[29]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[29]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#94 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[2]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[2]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#95 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[30]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[30]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#96 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[31]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[31]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#97 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[3]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[3]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#98 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[4]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[4]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#99 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[5]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[5]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#100 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[6]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[6]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#101 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[7]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[7]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#102 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[8]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[8]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#103 Warning
+Non-clocked latch  
+The latch Core_cpu/IF_ID/id_pc_reg[9]_LDC cannot be properly analyzed as its control pin Core_cpu/IF_ID/id_pc_reg[9]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#104 Warning
+Non-clocked latch  
+The latch Digital_LED/DN_data_reg[0]_LDC cannot be properly analyzed as its control pin Digital_LED/DN_data_reg[0]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#105 Warning
+Non-clocked latch  
+The latch Digital_LED/DN_data_reg[1]_LDC cannot be properly analyzed as its control pin Digital_LED/DN_data_reg[1]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#106 Warning
+Non-clocked latch  
+The latch Digital_LED/DN_data_reg[2]_LDC cannot be properly analyzed as its control pin Digital_LED/DN_data_reg[2]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#107 Warning
+Non-clocked latch  
+The latch Digital_LED/DN_data_reg[3]_LDC cannot be properly analyzed as its control pin Digital_LED/DN_data_reg[3]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name fpga_clk [get_ports fpga_clk] (Source: D:/ysy/proj_pipeline/proj_pipeline.srcs/constrs_1/new/miniRV_clock.xdc (Line: 2))
+Previous: create_clock -period 10.000 [get_ports fpga_clk] (Source: d:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/ip/cpuclk/cpuclk.xdc (Line: 56))
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name fpga_clk [get_ports fpga_clk] (Source: D:/ysy/proj_pipeline/proj_pipeline.srcs/constrs_1/new/miniRV_clock.xdc (Line: 2))
+Previous: create_clock -period 10.000 [get_ports fpga_clk] (Source: d:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/ip/cpuclk/cpuclk.xdc (Line: 56))
+Related violations: <none>
+
+

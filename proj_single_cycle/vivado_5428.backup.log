@@ -1,0 +1,236 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jul  3 14:12:20 2023
+# Process ID: 5428
+# Current directory: C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2476 C:\Users\Administrator\Desktop\proj_miniRV\proj_single_cycle\proj_single_cycle.xpr
+# Log file: C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.xpr
+INFO: [Project 1-313] Project file moved from 'D:/new/proj_single_cycle' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files', nor could it be found using path 'D:/new/proj_single_cycle/proj_single_cycle.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression "100.000 *1.0 / _@_"
+missing operand at _@_
+in expression "100.000 *1.0 / _@_"
+missing operand at _@_
+in expression "100.000 *1.0 / _@_"
+missing operand at _@_
+in expression "100.000 *1.0 / _@_"
+missing operand at _@_
+in expression "100.000 *1.0 / _@_"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression "100.000 *1.0 / _@_"
+missing operand at _@_
+in expression "100.000 *1.0 / _@_"
+missing operand at _@_
+in expression "100.000 *1.0 / _@_"
+missing operand at _@_
+in expression "100.000 *1.0 / _@_"
+missing operand at _@_
+in expression "100.000 *1.0 / _@_"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+missing operand at _@_
+in expression " _@_/ (100.000*1.0)"
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name cpuclk -dir c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {cpuclk} CONFIG.PRIMITIVE {PLL} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25} CONFIG.USE_RESET {false} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_DIVCLK_DIVIDE {4} CONFIG.MMCM_CLKFBOUT_MULT_F {33} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {33} CONFIG.CLKOUT1_JITTER {352.369} CONFIG.CLKOUT1_PHASE_ERROR {261.747}] [get_ips cpuclk]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'cpuclk' to 'cpuclk' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'cpuclk'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'cpuclk'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'cpuclk'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'cpuclk'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'cpuclk'...
+catch { config_ip_cache -export [get_ips -all cpuclk] }
+export_ip_user_files -of_objects [get_files c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.xci]
+launch_runs -jobs 8 cpuclk_synth_1
+[Mon Jul  3 14:20:57 2023] Launched cpuclk_synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.runs/cpuclk_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.xci] -directory C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files -ipstatic_source_dir C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/modelsim} {questa=C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/questa} {riviera=C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/riviera} {activehdl=C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sim_1/new/cpuclk_sim.v
+update_compile_order -fileset sim_1
+set_property top cpuclk_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpuclk_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpuclk_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sim_1/new/cpuclk_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto c7409b1ddabf4fa18ec9204b6edbe050 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpuclk_sim_behav xil_defaultlib.cpuclk_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=33,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.cpuclk_clk_wiz
+Compiling module xil_defaultlib.cpuclk
+Compiling module xil_defaultlib.cpuclk_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpuclk_sim_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.sim/sim_1/behav/xsim/xsim.dir/cpuclk_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 83.000 ; gain = 0.988
+INFO: [Common 17-206] Exiting Webtalk at Mon Jul  3 15:12:15 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 1024.547 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpuclk_sim_behav -key {Behavioral:sim_1:Functional:cpuclk_sim} -tclbatch {cpuclk_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source cpuclk_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpuclk_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1042.938 ; gain = 18.391
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1042.938 ; gain = 0.000
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name IROM -dir c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip
+set_property -dict [list CONFIG.depth {16384} CONFIG.data_width {32} CONFIG.Component_Name {IROM} CONFIG.memory_type {rom}] [get_ips IROM]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'IROM' to 'IROM' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'IROM'...
+generate_target all [get_files  c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'IROM'...
+catch { config_ip_cache -export [get_ips -all IROM] }
+export_ip_user_files -of_objects [get_files c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci]
+launch_runs -jobs 8 IROM_synth_1
+[Mon Jul  3 15:27:56 2023] Launched IROM_synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.runs/IROM_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci] -directory C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files -ipstatic_source_dir C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/modelsim} {questa=C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/questa} {riviera=C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/riviera} {activehdl=C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.coefficient_file {C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/program.coe}] [get_ips IROM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/program.coe' provided. It will be converted relative to IP Instance files '../../../../program.coe'
+generate_target all [get_files  c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'IROM'...
+catch { config_ip_cache -export [get_ips -all IROM] }
+export_ip_user_files -of_objects [get_files c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci] -no_script -sync -force -quiet
+reset_run IROM_synth_1
+launch_runs -jobs 8 IROM_synth_1
+[Mon Jul  3 15:40:47 2023] Launched IROM_synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.runs/IROM_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci] -directory C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files -ipstatic_source_dir C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/modelsim} {questa=C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/questa} {riviera=C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/riviera} {activehdl=C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name DRAM -dir c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip
+set_property -dict [list CONFIG.depth {16384} CONFIG.data_width {32} CONFIG.Component_Name {DRAM}] [get_ips DRAM]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'DRAM' to 'DRAM' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/DRAM/DRAM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'DRAM'...
+generate_target all [get_files  c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/DRAM/DRAM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'DRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'DRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'DRAM'...
+catch { config_ip_cache -export [get_ips -all DRAM] }
+export_ip_user_files -of_objects [get_files c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/DRAM/DRAM.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/DRAM/DRAM.xci]
+launch_runs -jobs 8 DRAM_synth_1
+[Mon Jul  3 15:46:06 2023] Launched DRAM_synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.runs/DRAM_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/DRAM/DRAM.xci] -directory C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files -ipstatic_source_dir C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/modelsim} {questa=C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/questa} {riviera=C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/riviera} {activehdl=C:/Users/Administrator/Desktop/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  3 17:32:41 2023...

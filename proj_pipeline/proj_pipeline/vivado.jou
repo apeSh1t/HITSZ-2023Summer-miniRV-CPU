@@ -1,0 +1,90 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jul 18 16:12:23 2023
+# Process ID: 10492
+# Current directory: D:/ysy/proj_pipeline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8804 D:\ysy\proj_pipeline\proj_pipeline.xpr
+# Log file: D:/ysy/proj_pipeline/vivado.log
+# Journal file: D:/ysy/proj_pipeline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ysy/proj_pipeline/proj_pipeline.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/defines.vh
+add_files -norecurse {D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/EX_MEM.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/NPC.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/SEXT.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/PC.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/RF.V D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/ALUB_SEL.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/ALU.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/Bridge.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/miniRV_SoC.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/ID_EX.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/MEM_WB.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/LED.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/SWITCH.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/RAM_SEL.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/HAZARD_CONTROLLER.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/BUTTON.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/DIGITAL_LED.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/CONTROLLER.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/ALUA_SEL.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/IF_ID.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/RF_WSEL.v D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/new/myCPU.v}
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run IROM_synth_1
+reset_run DRAM_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/ysy/proj_pipeline/proj_pipeline.runs/impl_1/miniRV_SoC.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/ysy/proj_pipeline/proj_pipeline.runs/impl_1/miniRV_SoC.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/ysy/proj_pipeline/proj_pipeline.runs/impl_1/miniRV_SoC.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/ysy/proj_pipeline/proj_pipeline.runs/impl_1/miniRV_SoC.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/ysy/proj_pipeline/proj_pipeline.runs/impl_1/miniRV_SoC.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {80.000} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {44} CONFIG.MMCM_CLKOUT0_DIVIDE_F {11} CONFIG.CLKOUT1_JITTER {285.756} CONFIG.CLKOUT1_PHASE_ERROR {307.118}] [get_ips cpuclk]
+generate_target all [get_files  D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/ip/cpuclk/cpuclk.xci]
+catch { config_ip_cache -export [get_ips -all cpuclk] }
+export_ip_user_files -of_objects [get_files D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/ip/cpuclk/cpuclk.xci] -no_script -sync -force -quiet
+reset_run cpuclk_synth_1
+launch_runs -jobs 16 cpuclk_synth_1
+export_simulation -of_objects [get_files D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/ip/cpuclk/cpuclk.xci] -directory D:/ysy/proj_pipeline/proj_pipeline.ip_user_files/sim_scripts -ip_user_files_dir D:/ysy/proj_pipeline/proj_pipeline.ip_user_files -ipstatic_source_dir D:/ysy/proj_pipeline/proj_pipeline.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ysy/proj_pipeline/proj_pipeline.cache/compile_simlib/modelsim} {questa=D:/ysy/proj_pipeline/proj_pipeline.cache/compile_simlib/questa} {riviera=D:/ysy/proj_pipeline/proj_pipeline.cache/compile_simlib/riviera} {activehdl=D:/ysy/proj_pipeline/proj_pipeline.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {70.000} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {42} CONFIG.MMCM_CLKOUT0_DIVIDE_F {12} CONFIG.CLKOUT1_JITTER {304.472} CONFIG.CLKOUT1_PHASE_ERROR {310.955}] [get_ips cpuclk]
+generate_target all [get_files  D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/ip/cpuclk/cpuclk.xci]
+catch { config_ip_cache -export [get_ips -all cpuclk] }
+export_ip_user_files -of_objects [get_files D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/ip/cpuclk/cpuclk.xci] -no_script -sync -force -quiet
+reset_run cpuclk_synth_1
+launch_runs -jobs 16 cpuclk_synth_1
+export_simulation -of_objects [get_files D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/ip/cpuclk/cpuclk.xci] -directory D:/ysy/proj_pipeline/proj_pipeline.ip_user_files/sim_scripts -ip_user_files_dir D:/ysy/proj_pipeline/proj_pipeline.ip_user_files -ipstatic_source_dir D:/ysy/proj_pipeline/proj_pipeline.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ysy/proj_pipeline/proj_pipeline.cache/compile_simlib/modelsim} {questa=D:/ysy/proj_pipeline/proj_pipeline.cache/compile_simlib/questa} {riviera=D:/ysy/proj_pipeline/proj_pipeline.cache/compile_simlib/riviera} {activehdl=D:/ysy/proj_pipeline/proj_pipeline.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {75.000} CONFIG.MMCM_DIVCLK_DIVIDE {4} CONFIG.MMCM_CLKFBOUT_MULT_F {33} CONFIG.MMCM_CLKOUT0_DIVIDE_F {11} CONFIG.CLKOUT1_JITTER {272.433} CONFIG.CLKOUT1_PHASE_ERROR {261.747}] [get_ips cpuclk]
+generate_target all [get_files  D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/ip/cpuclk/cpuclk.xci]
+catch { config_ip_cache -export [get_ips -all cpuclk] }
+export_ip_user_files -of_objects [get_files D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/ip/cpuclk/cpuclk.xci] -no_script -sync -force -quiet
+reset_run cpuclk_synth_1
+launch_runs -jobs 16 cpuclk_synth_1
+export_simulation -of_objects [get_files D:/ysy/proj_pipeline/proj_pipeline.srcs/sources_1/ip/cpuclk/cpuclk.xci] -directory D:/ysy/proj_pipeline/proj_pipeline.ip_user_files/sim_scripts -ip_user_files_dir D:/ysy/proj_pipeline/proj_pipeline.ip_user_files -ipstatic_source_dir D:/ysy/proj_pipeline/proj_pipeline.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ysy/proj_pipeline/proj_pipeline.cache/compile_simlib/modelsim} {questa=D:/ysy/proj_pipeline/proj_pipeline.cache/compile_simlib/questa} {riviera=D:/ysy/proj_pipeline/proj_pipeline.cache/compile_simlib/riviera} {activehdl=D:/ysy/proj_pipeline/proj_pipeline.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
